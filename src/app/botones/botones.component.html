@@ -1,0 +1,23 @@
+<!-- <div>
+    <button [class]="  {disabled: button_disabled}" class="btn btn-success mx-2 " (click)="text_color ='text-success'">Color Verde</button>
+    <button [class]=" {disabled: button_disabled} " class="btn btn-danger" (click)="text_color ='text-danger'" > Color Rojo</button>
+    <button [class]="  {disabled: button_disabled}" class="btn btn-primary" (click)="text_color ='text-primary'">Color Azul</button>
+</div>
+<p [class]="text_color" > Texto que va a cambiar de Color </p>
+
+
+<button class="btn btn-secondary" (click)="button_disabled = !button_disabled" >
+    Activar/Desactivar
+</button> -->
+
+<div>
+    <button class="btn btn-primary" (click)=" img = 'https://images.pexels.com/photos/17869843/pexels-photo-17869843/free-photo-of-arbol-ventanas-ventana-apartamento.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load' "  > 
+        imagen 1
+    </button>
+    
+    <button class="btn btn-danger" (click)=" img= 'https://images.pexels.com/photos/18378055/pexels-photo-18378055/free-photo-of-animal-mascota-mono-hierba.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load' "  > 
+        imagen 2
+    </button>
+</div>
+
+<img [src]="img" alt="">
